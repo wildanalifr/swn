@@ -844,10 +844,6 @@ select {
   margin-right: 1rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .ml-4 {
   margin-left: 1rem;
 }
@@ -874,6 +870,10 @@ select {
 
 .ml-5 {
   margin-left: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-1 {
@@ -1132,11 +1132,6 @@ select {
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
-.divide-cyan-800 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgba(21, 94, 117, var(--tw-divide-opacity));
-}
-
 .divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-divide-opacity));
@@ -1242,11 +1237,6 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-}
-
-.bg-cyan-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(21, 94, 117, var(--tw-bg-opacity));
 }
 
 .bg-gray-50 {
@@ -1378,10 +1368,6 @@ select {
   padding-bottom: 1rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -1478,16 +1464,6 @@ select {
   color: rgba(31, 41, 55, var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.text-cyan-100 {
-  --tw-text-opacity: 1;
-  color: rgba(207, 250, 254, var(--tw-text-opacity));
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -1521,6 +1497,11 @@ select {
 .text-green-800 {
   --tw-text-opacity: 1;
   color: rgba(6, 95, 70, var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .text-indigo-600 {
@@ -1610,11 +1591,6 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.hover\:bg-cyan-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(8, 145, 178, var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
@@ -1628,11 +1604,6 @@ select {
 .hover\:text-blue-700:hover {
   --tw-text-opacity: 1;
   color: rgba(29, 78, 216, var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .hover\:text-blue-800:hover {
@@ -1810,10 +1781,6 @@ select {
     display: block;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:hidden {
     display: none;
   }
@@ -1828,10 +1795,6 @@ select {
 
   .lg\:flex-none {
     flex: none;
-  }
-
-  .lg\:flex-shrink-0 {
-    flex-shrink: 0;
   }
 
   .lg\:grid-cols-3 {
