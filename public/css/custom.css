@@ -1,0 +1,14 @@
+.mytabs .tab {
+  display: none;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+  border-left: 1px;
+  border-top: 1px;
+  border-right: 1px;
+  background-color: white;
+}
