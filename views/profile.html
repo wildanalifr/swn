@@ -209,10 +209,23 @@
           <div class="mt-8">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 class="text-lg lg:text-xl leading-6 font-bold text-gray-900">Profil</h2>
-              <div class="mytabs flex flex-wrap w-full mt-2">
-                <input type="radio" id="tabfree" name="mytabs" class="hidden" />
-                <label class="cursor-pointer bg-white py-2 px-7 border-l border-t border-r relative font-medium text-sm" for="tabfree">Profil Akun</label>
-                <div class="tab bg-white w-full order-1 border">
+              <div class="mt-4">
+                <div class="max-w-xs">
+                  <nav class="relative z-0 rounded-tr-lg rounded-tl-lg shadow flex divide-x divide-gray-200" aria-label="Tabs">
+                    <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-700" -->
+                    <a href="#" class="text-gray-900 group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-sm font-medium text-center hover:bg-gray-50 focus:z-10" aria-current="page">
+                      <span>Profil Akun</span>
+                      <span aria-hidden="true" class="bg-indigo-500 absolute inset-x-0 bottom-0 h-0.5"></span>
+                    </a>
+
+                    <a href="#" class="text-gray-500 hover:text-gray-700 group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-sm font-medium text-center hover:bg-gray-50 focus:z-10">
+                      <span>Ubah Password</span>
+                      <span aria-hidden="true" class="bg-transparent absolute inset-x-0 bottom-0 h-0.5"></span>
+                    </a>
+                  </nav>
+                </div>
+                <div>
+                  <!-- Profil Akun -->
                   <div class="bg-white py-8 px-4 shadow sm:px-10">
                     <form method="POST">
                       <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-5 gap-x-7">
@@ -222,22 +235,6 @@
                         </div>
                         <div class="space-y-1">
                           <label for="phone" class="block text-sm font-medium text-gray-700"> NIK </label>
-                          <div class="mt-1"><input id="phone" name="telepon" type="text" autocomplete="telepon" required="required" value="" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
-                        </div>
-                        <div class="space-y-1">
-                          <label for="nama" class="block text-sm font-medium text-gray-700"> No.Telpon </label>
-                          <div class="mt-1"><input id="nama" name="nama" type="text" autocomplete="nama" required="required" value="" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
-                        </div>
-                        <div class="space-y-1">
-                          <label for="phone" class="block text-sm font-medium text-gray-700"> Alamat </label>
-                          <div class="mt-1"><input id="phone" name="telepon" type="text" autocomplete="telepon" required="required" value="" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
-                        </div>
-                        <div class="space-y-1">
-                          <label for="nama" class="block text-sm font-medium text-gray-700"> Email </label>
-                          <div class="mt-1"><input id="nama" name="nama" type="text" autocomplete="nama" placeholder="wildan@gmail.com" required="required" value="" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
-                        </div>
-                        <div class="space-y-1">
-                          <label for="phone" class="block text-sm font-medium text-gray-700"> Password </label>
                           <div class="mt-1"><input id="phone" name="telepon" type="text" autocomplete="telepon" required="required" value="" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
                         </div>
                         <div class="space-y-1">
@@ -265,34 +262,37 @@
                           <label for="password_confirmation" class="block text-sm font-medium text-gray-700"> Nama Rekening </label>
                           <div class="mt-1"><input id="password_confirmation" name="password_confirmation" type="text" autocomplete="password_confirmation" required="required" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
                         </div>
-                        <div class="sm:w-1/2 mt-1">
+                        <div class="w-1/2 mt-1">
                           <button type="button" class="py-3 px-5 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-white hover:text-gray-100 bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Simpan Info Akun</button>
                         </div>
                       </div>
                     </form>
                   </div>
-                </div>
+                  <!-- Profil Akun -->
 
-                <input type="radio" id="tabsilver" name="mytabs" class="hidden" />
-                <label class="cursor-pointer bg-gray-100 py-2 px-7 relative font-medium text-sm" for="tabsilver">Ubah Password</label>
-                <div class="tab bg-white w-full order-1 border">
-                  <div class="bg-white py-8 px-4 shadow sm:px-10">
-                    <form method="POST">
-                      <div class="space-y-4">
-                        <div class="space-y-1">
-                          <label for="password" class="block text-sm font-medium text-gray-700"> Password Lama </label>
-                          <div class="mt-1"><input id="password" name="password" type="text" placeholder="******" autocomplete="password" required="required" class="appearance-none w-full px-3 py-2 border border-gray-300 bg-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
-                        </div>
-                        <div class="space-y-1">
-                          <label for="password_confirmation" class="block text-sm font-medium text-gray-700"> Password Baru </label>
-                          <div class="mt-1"><input id="password_confirmation" name="password_confirmation" type="text" placeholder="Password Baru" autocomplete="password_confirmation" required="required" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
-                        </div>
-                        <div class="sm:w-1/2 mt-1">
-                          <button type="button" class="py-3 px-5 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-white hover:text-gray-100 bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Ganti Password</button>
-                        </div>
+                  <!-- Password -->
+                  <div class="hidden">
+                    <div class="tab bg-white w-full order-1 border">
+                      <div class="bg-white py-8 px-4 shadow sm:px-10">
+                        <form method="POST">
+                          <div class="space-y-4">
+                            <div class="space-y-1">
+                              <label for="password" class="block text-sm font-medium text-gray-700"> Password Lama </label>
+                              <div class="mt-1"><input id="password" name="password" type="text" placeholder="******" autocomplete="password" required="required" class="appearance-none w-full px-3 py-2 border border-gray-300 bg-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
+                            </div>
+                            <div class="space-y-1">
+                              <label for="password_confirmation" class="block text-sm font-medium text-gray-700"> Password Baru </label>
+                              <div class="mt-1"><input id="password_confirmation" name="password_confirmation" type="text" placeholder="Password Baru" autocomplete="password_confirmation" required="required" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-800 focus:border-blue-800 sm:text-sm" /></div>
+                            </div>
+                            <div class="w-1/2 mt-1">
+                              <button type="button" class="py-3 px-5 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-white hover:text-gray-100 bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Ganti Password</button>
+                            </div>
+                          </div>
+                        </form>
                       </div>
-                    </form>
+                    </div>
                   </div>
+                  <!-- Password -->
                 </div>
               </div>
             </div>

@@ -896,6 +896,10 @@ select {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -962,6 +966,14 @@ select {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .min-h-screen {
@@ -1171,6 +1183,12 @@ select {
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
+.divide-x > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
 .divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-divide-opacity));
@@ -1230,6 +1248,24 @@ select {
 .rounded-r-md {
   border-top-right-radius: 0.375rem;
   border-bottom-right-radius: 0.375rem;
+}
+
+.rounded-l-lg {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-r-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-tr-lg {
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-tl-lg {
+  border-top-left-radius: 0.5rem;
 }
 
 .border {
@@ -1319,6 +1355,15 @@ select {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .object-cover {
@@ -1698,6 +1743,15 @@ select {
 .hover\:text-gray-100:hover {
   --tw-text-opacity: 1;
   color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.hover\:text-gray-700:hover {
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.focus\:z-10:focus {
+  z-index: 10;
 }
 
 .focus\:border-blue-800:focus {
