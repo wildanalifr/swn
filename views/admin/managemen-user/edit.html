@@ -304,242 +304,79 @@
           </div>
 
           <div class="mt-8">
-            <div class="max-w-xs px-4 sm:px-6 lg:px-8">
-              <h2 class="text-lg lg:text-xl leading-6 font-bold text-gray-900">Manajemen Pendanaan</h2>
-              <div class="mt-3">
-                <!-- Card -->
-
-                <a href="./create.html" type="button" class="inline-flex items-center gap-x-3 px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500">
-                  Create Pendanaan
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </a>
-
-                <!-- More items... -->
-              </div>
-            </div>
-
-            <h2 class="mx-auto mt-8 px-4 capitalize text-lg lg:text-xl leading-6 font-bold text-gray-900 sm:px-6 lg:px-8">Tabel Pendanaan</h2>
+            <h2 class="mx-auto mt-8 px-4 capitalize text-lg lg:text-xl leading-6 font-bold text-gray-900 sm:px-6 lg:px-8">Edit User</h2>
 
             <!-- Activity table (small breakpoint and up) -->
-            <div class="block">
+            <div class="sm:block">
               <div class="mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mt-3 shadow overflow-hidden rounded-lg">
-                  <div class="align-middle min-w-full overflow-x-auto">
-                    <table class="min-w-full divide-y divide-gray-200">
-                      <thead class="bg-gray-50">
-                        <tr>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 capitalize tracking-wider">ID</th>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 capitalize tracking-wider">Nama Pendanaan</th>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 capitalize tracking-wider">Tanggal Mulai</th>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 capitalize tracking-wider">Jatuh Tempo</th>
-                          <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 capitalize tracking-wider">Status</th>
-                          <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 capitalize tracking-wider">Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <!-- Odd row -->
-                        <tr class="bg-white">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize"> Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="./edit.html" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
+                <div class="mt-3">
+                  <form action="#" method="POST">
+                    <div class="shadow overflow-hidden rounded-lg">
+                      <div class="px-4 py-5 bg-white sm:p-6">
+                        <div class="grid grid-cols-6 gap-6">
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">Nama (Sesuai KTP)</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Wildan" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                          </div>
 
-                        <!-- Even row -->
-                        <tr class="bg-gray-50">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-400 text-white capitalize"> Non Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="email-address" class="block text-sm font-medium text-gray-700">No Telpon</label>
+                            <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                          </div>
 
-                        <!-- Odd row -->
-                        <tr class="bg-white">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize"> Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="email-address" class="block text-sm font-medium text-gray-700">NIK</label>
+                            <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                          </div>
 
-                        <!-- Even row -->
-                        <tr class="bg-gray-50">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">4</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-400 text-white capitalize"> Non Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="email-address" class="block text-sm font-medium text-gray-700">Foto KTP</label>
+                            <div class="mt-1 flex items-center">
+                              <span class="h-20 w-32 rounded-md overflow-hidden bg-gray-100">
+                                <svg class="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                                </svg>
+                              </span>
+                              <button type="button" class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Upload</button>
+                            </div>
+                          </div>
 
-                        <!-- Odd row -->
-                        <tr class="bg-white">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">5</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize"> Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="email-address" class="block text-sm font-medium text-gray-700">Alamat</label>
+                            <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                          </div>
 
-                        <!-- Even row -->
-                        <tr class="bg-gray-50">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">6</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-400 text-white capitalize"> Non Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="email-address" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                          </div>
 
-                        <!-- Odd row -->
-                        <tr class="bg-white">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">7</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize"> Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="street-address" class="block text-sm font-medium text-gray-700">Password</label>
+                            <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                          </div>
 
-                        <!-- Even row -->
-                        <tr class="bg-gray-50">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">8</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-400 text-white capitalize"> Non Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="state" class="block text-sm font-medium text-gray-700">Nama Bank</label>
+                            <input type="text" name="state" id="state" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                          </div>
 
-                        <!-- Odd row -->
-                        <tr class="bg-white">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">9</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize"> Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="postal-code" class="block text-sm font-medium text-gray-700">No Rekening</label>
+                            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                          </div>
 
-                        <!-- Even row -->
-                        <tr class="bg-gray-50">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">10</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jane Cooper</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">July 11, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Desember 12, 2020</td>
-                          <td class="px-6 py-4 whitespace-nowrap text-center">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-400 text-white capitalize"> Non Aktif </span>
-                          </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-5">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                          </td>
-                        </tr>
-
-                        <!-- More people... -->
-                      </tbody>
-                    </table>
-                    <!-- Pagination -->
-                    <!-- This example requires Tailwind CSS v2.0+ -->
-                  </div>
-                  <div class="min-w-full">
-                    <div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
-                      <div class="flex-1 flex justify-between sm:hidden">
-                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"> Previous </a>
-                        <a href="#" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"> Next </a>
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="postal-code" class="block text-sm font-medium text-gray-700">Nama Rekening</label>
+                            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                          </div>
+                        </div>
                       </div>
-                      <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
-                        <div>
-                          <p class="text-sm text-gray-700">
-                            Showing
-                            <span class="font-medium">1</span>
-                            to
-                            <span class="font-medium">10</span>
-                            of
-                            <span class="font-medium">97</span>
-                            results
-                          </p>
-                        </div>
-                        <div>
-                          <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
-                            <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
-                              <span class="sr-only">Previous</span>
-                              <!-- Heroicon name: solid/chevron-left -->
-                              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                              </svg>
-                            </a>
-                            <!-- Current: "z-10 bg-indigo-50 border-indigo-500 text-indigo-600", Default: "bg-white border-gray-300 text-gray-500 hover:bg-gray-50" -->
-                            <a href="#" aria-current="page" class="z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium"> 1 </a>
-                            <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium"> 2 </a>
-                            <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium"> 3 </a>
-                            <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700"> ... </span>
-                            <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium"> 10 </a>
-                            <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
-                              <span class="sr-only">Next</span>
-                              <!-- Heroicon name: solid/chevron-right -->
-                              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                              </svg>
-                            </a>
-                          </nav>
-                        </div>
+                      <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                        <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Simpan Perubahan</button>
                       </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
