@@ -2541,6 +2541,10 @@ select {
     display: none;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:w-6\/12 {
     width: 50%;
   }
@@ -2553,20 +2557,8 @@ select {
     width: 24rem;
   }
 
-  .lg\:w-3\/5 {
-    width: 60%;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:max-w-6xl {
     max-width: 72rem;
-  }
-
-  .lg\:max-w-7xl {
-    max-width: 80rem;
   }
 
   .lg\:max-w-none {
@@ -2707,10 +2699,6 @@ select {
 }
 
 @media (min-width: 1280px) {
-  .xl\:w-2\/5 {
-    width: 40%;
-  }
-
   .xl\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
